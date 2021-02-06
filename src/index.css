@@ -3,9 +3,6 @@
 body {
   margin: 0;
   font-family: 'Roboto Mono', monospace;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -15,6 +12,7 @@ body {
   --gradient-1: #1f6f8b;
   --gradient-2: #99a8b2;
   --gradient-3: #e6d5b8;
+  --primary-font-color: white;
 }
 
 code {
