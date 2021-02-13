@@ -18,12 +18,12 @@ const projects = [
   {
     projectName: 'COVID19 Tracker',
     projectLink: 'https://covidtrackerapplication.netlify.app/',
-    projectImage: chatRoomImage,
+    projectImage: covidTrackerImage,
   },
   {
     projectName: 'Chat Room',
     projectLink: 'https://chatroomapp.netlify.app/',
-    projectImage: covidTrackerImage,
+    projectImage: chatRoomImage,
   },
 ];
 
