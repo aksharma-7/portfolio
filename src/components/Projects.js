@@ -30,7 +30,9 @@ const projects = [
 const Projects = () => {
   return (
     <section id='projects' className='projects-section'>
-      <h2 className='projects-section-header'>Projects that I've worked on</h2>
+      <h2 className='projects-section-header' style={{ fontSize: '3.8rem' }}>
+        Projects that I've worked on
+      </h2>
 
       <div className='projects-grid'>
         {projects.map((project) => (
