@@ -3,7 +3,7 @@ import Typewriter from 'typewriter-effect';
 
 const Home = () => {
   return (
-    <section id='home-section' className='home-section'>
+    <section id='home' className='home-section'>
       <p>Hey there!</p>
       <h1>
         <Typewriter
