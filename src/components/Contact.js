@@ -1,4 +1,23 @@
 import React from 'react';
+import { FaGithub, FaEnvelope, FaLinkedin } from 'react-icons/fa';
+
+const contactPlatforms = [
+  {
+    platformName: 'Github',
+    platformLink: 'https://github.com/aksharma-7',
+    platformIcon: <FaGithub />,
+  },
+  {
+    platformName: 'LinkedIn',
+    platformLink: 'https://www.linkedin.com/in/aksharma-7/',
+    platformIcon: <FaLinkedin />,
+  },
+  // {
+  //   platformName: 'Email',
+  //   platformLink: 'Github',
+  //   platformIcon: <FaEnvelope />,
+  // },
+];
 
 const Contact = () => {
   return (
@@ -8,34 +27,17 @@ const Contact = () => {
         <p>How do you take your coffee?</p>
       </div>
       <div className='contact-links'>
-        <a
-          href='https://facebook.com/freecodecamp'
-          target='_blank'
-          className='btn contact-details'
-        >
-          <i className='fab fa-facebook-square'></i> Facebook
-        </a>
-        <a
-          id='profile-link'
-          href='https://github.com/freecodecamp'
-          target='_blank'
-          className='btn contact-details'
-        >
-          <i className='fab fa-github'></i> GitHub
-        </a>
-        <a
-          href='https://twitter.com/freecodecamp'
-          target='_blank'
-          className='btn contact-details'
-        >
-          <i className='fab fa-twitter'></i> Twitter
-        </a>
-        <a href='mailto:example@example.com' className='btn contact-details'>
-          <i className='fas fa-at'></i> Send a mail
-        </a>
-        <a href='tel:555-555-5555' className='btn contact-details'>
-          <i className='fas fa-mobile-alt'></i> Call me
-        </a>
+        {contactPlatforms.map((platform) => (
+          <a
+            href={platform.platformLink}
+            target='_blank'
+            className='btn contact-details'
+          >
+            <span>
+              {platform.platformIcon} {platform.platformName}
+            </span>
+          </a>
+        ))}
       </div>
     </section>
   );

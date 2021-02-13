@@ -1,14 +1,14 @@
 import React from 'react';
 
-const Navbar = () => {
+const Header = () => {
   return (
     <nav id='navbar' className='nav'>
       <ul className='nav-list'>
         <li>
-          <a href='#welcome-section'>About</a>
+          <a href='#home-section'>Home</a>
         </li>
         <li>
-          <a href='#projects'>Work</a>
+          <a href='#projects'>Projects</a>
         </li>
         <li>
           <a href='#contact'>Contact</a>
@@ -18,4 +18,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Header;
