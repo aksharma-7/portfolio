@@ -53,7 +53,7 @@ const Projects = () => {
         ))}
       </div>
 
-      {projects.length > 2 ? (
+      {projects.length > 6 ? (
         <a
           href='https://github.com/aksharma-7?tab=repositories'
           className='btn btn-show-all'
